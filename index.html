@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORFIN 2026 — AI-Driven Cyber Resilience for the Digital Future</title>
+<meta name="description" content="FORFIN 2026 (Fortifying Finance) — the executive cybersecurity &amp; financial-technology summit. 1 &amp; 2 October 2026, Dar es Salaam, Tanzania. Hosted by Computer Centre Tanzania.">
+<link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ===== ICON SPRITE ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="i-ai"><path d="M12 2 19 5v6c0 4.5-3 7.8-7 9.6C8 18.8 5 15.5 5 11V5l7-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="11" r="1.7" fill="currentColor"/><circle cx="9" cy="8" r="1" fill="currentColor"/><circle cx="15" cy="8" r="1" fill="currentColor"/><circle cx="12" cy="15" r="1" fill="currentColor"/><path d="M12 11 9 8M12 11l3-3M12 11v4" stroke="currentColor" stroke-width="1.2"/></g>
+  <g id="i-cloud"><path d="M7.5 18h9a3.5 3.5 0 0 0 .4-7A5 5 0 0 0 7.5 9.6 3.7 3.7 0 0 0 7.5 18Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><rect x="10" y="12" width="4" height="3.4" rx=".6" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M10.6 12v-1a1.4 1.4 0 0 1 2.8 0v1" fill="none" stroke="currentColor" stroke-width="1.3"/></g>
+  <g id="i-identity"><circle cx="12" cy="9" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 19a6 6 0 0 1 12 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 9.5l1.3 1.3 2.2-2.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="i-data"><ellipse cx="12" cy="6" rx="6" ry="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 6v6c0 1.3 2.7 2.4 6 2.4s6-1.1 6-2.4V6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 12v3c0 1.3 2.7 2.4 6 2.4 1 0 1.9-.1 2.7-.3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M17 14.5l2.3 1v2.3l-2.3 1-2.3-1V15.5l2.3-1Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></g>
+  <g id="i-fraud"><path d="M12 3 20 6v5c0 4.4-3 7.7-8 9.5C7 18.7 4 15.4 4 11V6l8-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 8v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="15" r=".9" fill="currentColor"/></g>
+  <g id="i-compliance"><path d="M12 3v16" stroke="currentColor" stroke-width="1.5"/><path d="M6 7h12" stroke="currentColor" stroke-width="1.5"/><path d="M6 7l-2.4 5a2.6 2.6 0 0 0 4.8 0L6 7Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M18 7l-2.4 5a2.6 2.6 0 0 0 4.8 0L18 7Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8.5 20h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></g>
+  <g id="i-soc"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M4 12h3l2-4 3 8 2-5 1.6 3H20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></g>
+  <g id="i-workshop"><path d="M14.5 5.5a3.5 3.5 0 0 0-4.8 4.6L4 15.8 6.2 18l5.7-5.7a3.5 3.5 0 0 0 4.6-4.8l-2 2-1.8-1.8 2-2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></g>
+  <g id="i-panel"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h8A2.5 2.5 0 0 1 16 6.5v3A2.5 2.5 0 0 1 13.5 12H8l-3 2.5V12H5.5A2.5 2.5 0 0 1 3 9.5Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 15.5h8.5A2.5 2.5 0 0 0 21 13v-3" fill="none" stroke="currentColor" stroke-width="1.5"/></g>
+  <g id="i-conf"><rect x="3.5" y="4" width="17" height="11" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 19h8M12 15v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7 11l3-3 2.5 2.5L17 6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="i-qa"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M9.2 9.4a2.8 2.8 0 0 1 5.4 1c0 1.8-2.6 2.2-2.6 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></g>
+  <g id="i-network"><circle cx="12" cy="5" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="5.5" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18.5" cy="17" r="2.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M11 7 6.7 15M13 7l4.3 8M7.7 17h8.6" stroke="currentColor" stroke-width="1.4"/></g>
+  <g id="i-retreat"><circle cx="12" cy="9" r="3.4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3 19c2.5-3 6-4.5 9-4.5S18.5 16 21 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 2.5v1.4M19 9h1.4M3.6 9H5M16.6 4.4l1 1M6.4 4.4l-1 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></g>
+  <g id="i-pin"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></g>
+  <g id="i-cal"><rect x="3.5" y="5" width="17" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></g>
+  <g id="i-arrow"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g id="i-mail"><rect x="3.5" y="5.5" width="17" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></g>
+  <g id="i-phone"><path d="M5 4h3.5l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 4 6a2 2 0 0 1 1-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></g>
+  <g id="i-zoom"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4M11 8.5v5M8.5 11h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></g>
+  <g id="i-close"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></g>
+  <g id="i-chev"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+</defs></svg>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#top" class="nav__brand"><img src="assets/forfin-logo-white.png" alt="FORFIN 2026"></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#theme">Theme</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#agenda">Agenda</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#partners">Partners</a>
+      <a href="#venue">Venue</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <canvas class="hero__canvas" id="net"></canvas>
+  <div class="hero__glow"></div>
+  <div class="hero__inner container">
+    <div class="hero__badge"><span class="dot"></span> 2<sup>nd</sup> Edition · Hosted by Computer Centre Tanzania</div>
+    <h1 class="hero__title">AI-Driven <span class="grad">Cyber Resilience</span><br>for the Digital Future</h1>
+    <p class="hero__sub">FORFIN 2026 — <em>Fortifying Finance.</em> The executive summit where Tanzania's banks, fintechs, insurers and regulators turn AI, zero-trust and cloud resilience into the foundation of a trusted digital economy.</p>
+
+    <div class="hero__meta">
+      <div class="chip"><svg class="ico"><use href="#i-cal"/></svg><span class="event-date">1<sup>st</sup> &amp; 2<sup>nd</sup> October 2026</span></div>
+      <div class="chip"><svg class="ico"><use href="#i-pin"/></svg> White Sands Resort &amp; Conference Centre</div>
+    </div>
+
+    <div class="hero__actions">
+      <a href="#agenda" class="btn btn--ghost">Explore the agenda</a>
+    </div>
+
+    <!-- countdown -->
+    <div class="countdown" id="countdown" aria-label="Countdown to FORFIN 2026">
+      <div class="cd"><span class="cd__n" data-days>00</span><span class="cd__l">Days</span></div>
+      <div class="cd"><span class="cd__n" data-hours>00</span><span class="cd__l">Hours</span></div>
+      <div class="cd"><span class="cd__n" data-mins>00</span><span class="cd__l">Minutes</span></div>
+      <div class="cd"><span class="cd__n" data-secs>00</span><span class="cd__l">Seconds</span></div>
+    </div>
+  </div>
+  <a href="#partners-strip" class="hero__scroll" aria-label="Scroll"><span></span></a>
+</section>
+
+<!-- ===== PARTNER STRIP ===== -->
+<section class="strip" id="partners-strip">
+  <div class="container strip__inner">
+    <span class="strip__label">In partnership with</span>
+    <div class="strip__logos">
+      <span class="strip__logo strip__logo--strategic"><img src="assets/sponsors/trinexia.png" alt="Trinexia — Strategic Partner"></span>
+      <span class="strip__logo"><img src="assets/sponsors/thales.png" alt="Thales"></span>
+      <span class="strip__logo"><span class="strip__wordmark strip__wordmark--imperva">imperva</span></span>
+      <span class="strip__logo"><img src="assets/sponsors/idira.png" alt="IDIRA"></span>
+      <span class="strip__logo"><img src="assets/sponsors/solarwinds.png" alt="SolarWinds"></span>
+      <span class="strip__logo"><img src="assets/sponsors/hpe.png" alt="HPE"></span>
+      <span class="strip__logo"><img src="assets/sponsors/fortinet.png" alt="Fortinet"></span>
+      <span class="strip__logo"><img src="assets/sponsors/kaspersky.png" alt="Kaspersky Lab"></span>
+      <span class="strip__logo"><img src="assets/sponsors/nutanix.png" alt="Nutanix"></span>
+      <span class="strip__logo"><img src="assets/sponsors/defenix.png" alt="Defenix"></span>
+      <span class="strip__logo"><img src="assets/sponsors/evad.png" alt="EVAD"></span>
+      <span class="strip__logo"><img src="assets/sponsors/datapatrol.png" alt="DataPatrol"></span>
+      <span class="strip__logo"><img src="assets/sponsors/censys.png" alt="Censys"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="container about">
+    <div class="about__copy reveal">
+      <span class="eyebrow">A confluence shaping secure finance</span>
+      <h2 class="h2">Two days where finance, regulation and AI-driven security meet.</h2>
+      <p>FORFIN 2026 — <strong>Fortifying Finance</strong> — convenes the leaders accountable for trust across Tanzania's financial and government sectors. Building on a landmark first edition, this year turns to the defining challenge of the decade: keeping institutions resilient as AI reshapes both attack and defence.</p>
+      <p>Expect candid keynotes, hands-on workshops, working panels and the kind of executive networking that turns into partnerships — all in an immersive retreat setting on the Indian Ocean.</p>
+      <p><strong>Attendance is by invitation only.</strong></p>
+    </div>
+    <div class="about__stats reveal">
+      <div class="stat"><span class="stat__n" data-count="60" data-suffix="+">0</span><span class="stat__l">Senior decision-makers</span></div>
+      <div class="stat"><span class="stat__n" data-count="2">0</span><span class="stat__l">Days, fullboard retreat</span></div>
+      <div class="stat"><span class="stat__n" data-count="7">0</span><span class="stat__l">Conference tracks</span></div>
+      <div class="stat"><span class="stat__n" data-count="6" data-suffix="+">0</span><span class="stat__l">Technology partners</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THEME ===== -->
+<section class="section theme" id="theme">
+  <div class="container theme__inner reveal">
+    <span class="eyebrow on-dark">2026 Theme</span>
+    <h2 class="theme__title">AI-Driven Cyber Resilience<br>for the <span class="grad">Digital Future</span></h2>
+    <p class="theme__lead">Resilience is no longer about keeping attackers out — it is about detecting, absorbing and recovering at machine speed, with AI on the side of the defender and trust as the deliverable.</p>
+    <div class="theme__loop">
+      <div class="loopstep"><span class="loopstep__n">01</span><h4>Anticipate</h4><p>AI surfaces threats across the financial estate before they're weaponised.</p></div>
+      <div class="loopstep"><span class="loopstep__n">02</span><h4>Withstand</h4><p>Zero-trust and identity contain blast radius automatically.</p></div>
+      <div class="loopstep"><span class="loopstep__n">03</span><h4>Recover</h4><p>Autonomous response restores service in minutes, not hours.</p></div>
+      <div class="loopstep"><span class="loopstep__n">04</span><h4>Adapt</h4><p>Every incident retrains the models — defence compounds over time.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRACKS ===== -->
+<section class="section" id="tracks">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Conference tracks</span>
+      <h2 class="h2">Eight agenda themes. One resilient financial future.</h2>
+      <p class="section__sub">Explore the core themes shaping the FORFIN 2026 programme across both days.</p>
+    </div>
+    <div class="grid-3 tracks">
+      <article class="card reveal"><span class="card__ic"><svg><use href="#i-ai"/></svg></span><h3>AI-Driven Cyber Defence</h3><p>AI security innovation, automated detection and resilient financial services.</p></article>
+      <article class="card reveal"><span class="card__ic"><svg><use href="#i-data"/></svg></span><h3>Data &amp; Application Security</h3><p>Post-quantum readiness, data protection and modern application security.</p></article>
+      <article class="card reveal"><span class="card__ic"><svg><use href="#i-identity"/></svg></span><h3>Identity Security</h3><p>Protecting human and machine identities with just-in-time privileged access.</p></article>
+      <article class="card reveal"><span class="card__ic"><svg><use href="#i-cloud"/></svg></span><h3>Cloud &amp; AI Infrastructure</h3><p>Secure AI workloads across private cloud, GreenLake and hybrid environments.</p></article>
+      <article class="card reveal"><span class="card__ic"><svg><use href="#i-soc"/></svg></span><h3>Full-Stack Observability</h3><p>Turning IT and network visibility into operational resilience for banks.</p></article>
+      <article class="card reveal"><span class="card__ic"><svg><use href="#i-fraud"/></svg></span><h3>Threat Intelligence &amp; Response</h3><p>AI-driven threat intelligence, red teaming and incident response.</p></article>
+      <article class="card reveal"><span class="card__ic"><svg><use href="#i-compliance"/></svg></span><h3>External Exposure Management</h3><p>Managing attack surfaces, data leakage and the expanding digital perimeter.</p></article>
+      <article class="card reveal card--accent"><span class="card__ic"><svg><use href="#i-ai"/></svg></span><h3>Digital Trust &amp; Resilience</h3><p>Converging identity, data and infrastructure security to protect modern banks.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE / FORMATS ===== -->
+<section class="section section--gray" id="experience">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">The experience</span>
+      <h2 class="h2">More than a conference — an immersive retreat.</h2>
+      <p class="section__sub">A two-day, overnight fullboard programme built for focus, reflection and connection.</p>
+    </div>
+    <div class="grid-3 formats">
+      <article class="fmt reveal"><span class="fmt__ic"><svg><use href="#i-workshop"/></svg></span><h3>Workshops</h3><p>Hands-on sessions solving real-world cybersecurity challenges.</p></article>
+      <article class="fmt reveal"><span class="fmt__ic"><svg><use href="#i-panel"/></svg></span><h3>Panel Discussions</h3><p>Expert-led conversations on policy, compliance and future trends.</p></article>
+      <article class="fmt reveal"><span class="fmt__ic"><svg><use href="#i-conf"/></svg></span><h3>Conferences</h3><p>Presentations on emerging tech, innovation and case studies.</p></article>
+      <article class="fmt reveal"><span class="fmt__ic"><svg><use href="#i-qa"/></svg></span><h3>Q&amp;A Sessions</h3><p>Interactive segments for direct engagement with speakers.</p></article>
+      <article class="fmt reveal"><span class="fmt__ic"><svg><use href="#i-network"/></svg></span><h3>Networking</h3><p>Open discussions with executives, regulators and innovators.</p></article>
+      <article class="fmt reveal"><span class="fmt__ic"><svg><use href="#i-retreat"/></svg></span><h3>Retreat Setting</h3><p>A premium ocean-side venue for reflection and strategy.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENDA ===== -->
+<section class="section" id="agenda">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Programme at a glance</span>
+      <h2 class="h2">Two days of secure infrastructure, digital identity and cyber defence.</h2>
+    </div>
+    <div class="agenda reveal">
+      <div class="agenda__tabs">
+        <button class="tab is-active" data-day="1">Day 1 · 1 Oct</button>
+        <button class="tab" data-day="2">Day 2 · 2 Oct</button>
+      </div>
+      <div class="agenda__panel" data-panel="1">
+        <div class="ag-row"><span class="ag-time">08:00</span><div class="ag-body"><h4>Registration, Breakfast and Networking</h4><span class="ag-tag">Arrivals and registration</span></div></div>
+        <div class="ag-row"><span class="ag-time">09:00</span><div class="ag-body"><h4>Welcome Remarks and FORFIN 2026 Overview</h4><span class="ag-tag">CCTZ Management</span></div></div>
+        <div class="ag-row"><span class="ag-time">09:15</span><div class="ag-body"><h4>Building an AI-Driven and Resilient Financial Sector</h4><span class="ag-tag">Executive keynote</span></div></div>
+        <div class="ag-row"><span class="ag-time">09:35</span><div class="ag-body"><h4>Data Security: Post-Quantum Cryptography: Future Readiness</h4><span class="ag-tag">Thales / Imperva</span></div></div>
+        <div class="ag-row"><span class="ag-time">10:50</span><div class="ag-body"><h4>Identity Security for the AI Era</h4><span class="ag-tag">IDIRA · Identity</span></div></div>
+        <div class="ag-row"><span class="ag-time">12:20</span><div class="ag-body"><h4>Nutanix Cloud Platform — Migrating from Legacy VMware Environments</h4><span class="ag-tag">Nutanix</span></div></div>
+        <div class="ag-row"><span class="ag-time">14:00</span><div class="ag-body"><h4>Trust Is the New Currency</h4><span class="ag-tag">Kaspersky</span></div></div>
+        <div class="ag-row ag-row--star"><span class="ag-time">19:00</span><div class="ag-body"><h4>Networking Dinner</h4><span class="ag-tag">Delegates and partners</span></div></div>
+      </div>
+      <div class="agenda__panel" data-panel="2" hidden>
+        <div class="ag-row"><span class="ag-time">08:00</span><div class="ag-body"><h4>Breakfast and Executive Networking</h4><span class="ag-tag">Breakfast</span></div></div>
+        <div class="ag-row"><span class="ag-time">08:30</span><div class="ag-body"><h4>Day One Recap and Day Two Introduction</h4><span class="ag-tag">CCTZ</span></div></div>
+        <div class="ag-row"><span class="ag-time">08:40</span><div class="ag-body"><h4>Full-Stack Observability for Operational Resilience</h4><span class="ag-tag">ATS · SolarWinds</span></div></div>
+        <div class="ag-row"><span class="ag-time">10:00</span><div class="ag-body"><h4>Cyber Security in the Era of AI</h4><span class="ag-tag ag-tag--f">Fortinet</span></div></div>
+        <div class="ag-row"><span class="ag-time">11:15</span><div class="ag-body"><h4>Thinking Like an Attacker</h4><span class="ag-tag">Defenix</span></div></div>
+        <div class="ag-row"><span class="ag-time">12:00</span><div class="ag-body"><h4>Detect, Defend, Respond</h4><span class="ag-tag">Panel discussion</span></div></div>
+        <div class="ag-row"><span class="ag-time">14:10</span><div class="ag-body"><h4>From Edge to Cloud: Secure AI Workloads</h4><span class="ag-tag">HPE</span></div></div>
+        <div class="ag-row"><span class="ag-time">16:05</span><div class="ag-body"><h4>Appreciation and Closing Remarks</h4><span class="ag-tag">CEO</span></div></div>
+      </div>
+      <div class="agenda__foot">
+        <a href="agenda.html" class="btn btn--primary btn--sm">View full agenda <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <span class="agenda__note">Sessions are indicative and subject to change.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPEAKERS ===== -->
+<section class="section section--gray" id="speakers">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Meet the speakers</span>
+      <h2 class="h2">Global experts redefining trust, compliance &amp; resilience.</h2>
+      <p class="section__sub">Our 2026 speaker line-up is being finalised. Check back soon for updates.</p>
+    </div>
+    <div class="grid-3 speakers reveal">
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-01.png" alt="Philip Van Dalen" loading="lazy"><h4>Philip Van Dalen</h4><span>Thales</span></div>
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-04.png" alt="Lynel Dsouza" loading="lazy"><h4>Lynel Dsouza</h4><span>Thales</span></div>
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-03.png" alt="Mervyn Yan" loading="lazy"><h4>Mervyn Yan</h4><span>IDIRA</span></div>
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-06.png" alt="Filipe Galvao" loading="lazy"><h4>Filipe Galvao</h4><span>IDIRA</span></div>
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-07.png" alt="Imran Chaudhrey" loading="lazy"><h4>Imran Chaudhrey</h4><span>Fortinet</span></div>
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-08.png" alt="Nimira Ayub" loading="lazy"><h4>Nimira Ayub</h4><span>Kaspersky</span></div>
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-02.png" alt="Nawaz Bagha" loading="lazy"><h4>Nawaz Bagha</h4><span>Nutanix</span></div>
+      <div class="spk"><img class="spk__photo" src="assets/speakers/speaker-05.png" alt="Loay Hussein" loading="lazy"><h4>Loay Hussein</h4><span>DataPatrol</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARTNERS ===== -->
+<section class="section" id="partners">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Sponsors &amp; technology partners</span>
+      <h2 class="h2">The partners powering AI-driven cyber resilience.</h2>
+    </div>
+
+    <div class="partner-grid reveal">
+      <div class="plogo"><img src="assets/sponsors/trinexia.png" alt="Trinexia"></div>
+      <div class="plogo"><img src="assets/sponsors/thales.png" alt="Thales"></div>
+      <div class="plogo"><span class="wm wm--imperva">imperva</span></div>
+      <div class="plogo"><img src="assets/sponsors/idira.png" alt="IDIRA"></div>
+      <div class="plogo"><img src="assets/sponsors/solarwinds.png" alt="SolarWinds"></div>
+      <div class="plogo"><img src="assets/sponsors/hpe.png" alt="HPE"></div>
+      <div class="plogo"><img src="assets/sponsors/fortinet.png" alt="Fortinet"></div>
+      <div class="plogo"><img src="assets/sponsors/kaspersky.png" alt="Kaspersky Lab"></div>
+      <div class="plogo"><img src="assets/sponsors/nutanix.png" alt="Nutanix"></div>
+      <div class="plogo"><img src="assets/sponsors/defenix.png" alt="Defenix"></div>
+      <div class="plogo"><img src="assets/sponsors/evad.png" alt="EVAD"></div>
+      <div class="plogo"><img src="assets/sponsors/datapatrol.png" alt="DataPatrol"></div>
+      <div class="plogo"><img src="assets/sponsors/censys.png" alt="Censys"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MOMENTS / LOOK BACK 2025 ===== -->
+<section class="section" id="moments">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">Look back · FORFIN 2025</span>
+      <h2 class="h2">Moments from the first edition.</h2>
+      <p class="section__sub">Keynotes, panels, hands-on workshops and ocean-side networking from the inaugural summit.</p>
+    </div>
+    <div class="moments reveal">
+      <figure class="tile" data-cat="keynote"><img src="assets/gallery/photo-01.jpg" alt="Opening keynote" loading="lazy"><figcaption><span class="tile__cat">Keynote</span><span class="tile__cap">Opening keynote</span></figcaption><span class="tile__z"><svg class="ico"><use href="#i-zoom"/></svg></span></figure>
+      <figure class="tile" data-cat="panel"><img src="assets/gallery/photo-03.jpg" alt="Expert panel" loading="lazy"><figcaption><span class="tile__cat">Panel</span><span class="tile__cap">Expert panel</span></figcaption><span class="tile__z"><svg class="ico"><use href="#i-zoom"/></svg></span></figure>
+      <figure class="tile" data-cat="workshop"><img src="assets/gallery/photo-02.jpg" alt="Breakout session" loading="lazy"><figcaption><span class="tile__cat">Breakout</span><span class="tile__cap">Breakout session</span></figcaption><span class="tile__z"><svg class="ico"><use href="#i-zoom"/></svg></span></figure>
+      <figure class="tile" data-cat="venue"><img src="assets/gallery/photo-04.jpg" alt="White Sands venue" loading="lazy"><figcaption><span class="tile__cat">Venue</span><span class="tile__cap">White Sands Resort &amp; Conference Centre</span></figcaption><span class="tile__z"><svg class="ico"><use href="#i-zoom"/></svg></span></figure>
+      <figure class="tile" data-cat="workshop"><img src="assets/gallery/photo-05.jpg" alt="Hands-on workshop" loading="lazy"><figcaption><span class="tile__cat">Workshop</span><span class="tile__cap">Hands-on workshop</span></figcaption><span class="tile__z"><svg class="ico"><use href="#i-zoom"/></svg></span></figure>
+      <a class="tile tile--video" href="https://youtu.be/LXhusWkZo80" target="_blank" rel="noopener" aria-label="Play FORFIN 1st Edition Highlights video">
+        <img src="assets/gallery/photo-01.jpg" alt="FORFIN 1st Edition Highlights video thumbnail" loading="lazy">
+        <span class="gl-video__shade"></span>
+        <span class="gl-video__play gl-video__play--tile" aria-hidden="true"><span></span></span>
+        <span class="tile-video__caption"><span class="tile__cat">Video</span><span class="tile__cap">1<sup>st</sup> Edition Highlights</span></span>
+      </a>
+    </div>
+    <div class="moments-foot reveal">
+      <a href="gallery.html" class="btn btn--primary">View the full gallery <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VENUE ===== -->
+<section class="section section--gray" id="venue">
+  <div class="container venue">
+    <div class="venue__copy reveal">
+      <span class="eyebrow">The venue</span>
+      <h2 class="h2">White Sands Resort &amp; Conference Centre.</h2>
+      <p>FORFIN 2026 is hosted at the renowned <strong>White Sands Resort &amp; Conference Centre</strong> on Jangwani Beach — a prime setting that pairs modern conference facilities with the serene charm of the Indian Ocean.</p>
+      <p>Spacious meeting rooms with ocean views and a calm, secure environment provide the perfect backdrop for focused dialogue, knowledge-sharing and high-level networking.</p>
+      <div class="venue__meta">
+        <div><svg class="ico"><use href="#i-pin"/></svg> Jangwani Beach, Dar es Salaam, Tanzania</div>
+        <div><svg class="ico"><use href="#i-cal"/></svg><span class="event-date">1<sup>st</sup> &amp; 2<sup>nd</sup> October 2026 · Overnight fullboard</span></div>
+      </div>
+    </div>
+    <div class="venue__map reveal">
+      <iframe title="Venue map" loading="lazy" src="https://maps.google.com/maps?q=White%20Sands%20Resort%20and%20Conference%20Centre%20Dar%20es%20Salaam&t=m&z=11&output=embed&iwloc=near"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INVITATION NOTICE ===== -->
+<section class="cta" id="attendance">
+  <div class="cta__glow"></div>
+  <div class="container cta__inner reveal">
+    <h2 class="cta__title">Attendance is by<br><span class="grad">invitation only.</span></h2>
+    <p class="cta__sub">FORFIN 2026 is a private gathering curated for invited senior decision-makers from Tanzania’s financial, government and technology sectors.</p>
+  </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb__close" id="lbClose" aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+  <button class="lb__nav lb__prev" id="lbPrev" aria-label="Previous"><svg class="ico"><use href="#i-chev"/></svg></button>
+  <figure class="lb__stage"><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb__nav lb__next" id="lbNext" aria-label="Next"><svg class="ico" style="transform:scaleX(-1)"><use href="#i-chev"/></svg></button>
+  <span class="lb__count" id="lbCount"></span>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/forfin-logo-white.png" alt="FORFIN 2026">
+      <p>Fortifying Finance · AI-Driven Cyber Resilience for the Digital Future. An event by Computer Centre Tanzania.</p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/ComputerCentreTZ" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/company/cctz/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/computercentretanzania/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h5>Event</h5>
+      <a href="#about">About FORFIN</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#partners">Partners</a>
+      <a href="#venue">Venue</a>
+      <a href="contact.html">Contact us</a>
+    </div>
+    <div class="footer__col">
+      <h5>Contact</h5>
+      <a href="mailto:forfin@cctz.co.tz"><svg class="ico"><use href="#i-mail"/></svg> forfin@cctz.co.tz</a>
+      <a href="tel:+255672907560"><svg class="ico"><use href="#i-phone"/></svg> +255 672 907 560</a>
+      <a href="tel:+255763570537"><svg class="ico"><use href="#i-phone"/></svg> +255 763 570 537</a>
+      <a href="https://cctz.com/" target="_blank" rel="noopener">cctz.com</a>
+    </div>
+  </div>
+  <div class="footer__bar container">
+    <span>© 2026 FORFIN · Computer Centre Tanzania. All rights reserved. · <a href="privacy.html">Privacy Policy</a></span>
+    <span>#FORFIN2026 · <span class="event-date">1<sup>st</sup> &amp; 2<sup>nd</sup> October 2026</span></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
