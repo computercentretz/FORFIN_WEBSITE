@@ -165,7 +165,8 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .ag-time{font-family:"Montserrat";font-weight:800;font-size:15px;color:var(--cyan-deep);min-width:52px}
 .ag-body{display:flex;align-items:center;justify-content:space-between;gap:14px;flex:1;flex-wrap:wrap}
 .ag-body h4{font-size:15px;color:var(--navy);font-weight:700}
-.ag-tag{font-family:"Montserrat";font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--gray);border:1px solid var(--line);padding:5px 10px;border-radius:20px;white-space:nowrap}
+.ag-tag{font-family:"Montserrat";font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--gray);border:1px solid var(--line);padding:5px 10px;border-radius:20px;white-space:normal;line-height:1.45;overflow-wrap:anywhere;max-width:100%}
+.ag-tag__type{color:var(--cyan-deep)}
 .ag-row--star{background:linear-gradient(120deg,rgba(7,27,77,.04),transparent)}
 .ag-row--star h4{color:var(--navy)}
 .agenda__foot{display:flex;align-items:center;gap:18px;padding:20px 26px;background:var(--gray);border-top:1px solid var(--line);flex-wrap:wrap}
