@@ -215,6 +215,46 @@
   });
   $$("[data-question]", chat).forEach(button => button.addEventListener("click", () => askFaq(button.dataset.question)));
 
+  /* ---------- scroll-triggered video modal ---------- */
+  const videoModal = document.getElementById("videoModal");
+  if (videoModal) {
+    const closeVideoModal = () => {
+      const iframe = videoModal.querySelector("iframe");
+      if (iframe) {
+        const src = iframe.src;
+        iframe.src = "";
+        iframe.src = src;
+      }
+      videoModal.classList.remove("is-open");
+      videoModal.setAttribute("aria-hidden", "true");
+      window.sessionStorage.setItem("forfin-video-modal-dismissed", "true");
+    };
+    const openVideoModal = () => {
+      if (window.sessionStorage.getItem("forfin-video-modal-dismissed") === "true") return;
+      videoModal.classList.add("is-open");
+      videoModal.setAttribute("aria-hidden", "false");
+    };
+
+    const videoTrigger = () => {
+      if (window.sessionStorage.getItem("forfin-video-modal-dismissed") === "true") return;
+      if (window.scrollY > 500 || window.innerHeight + window.scrollY >= document.body.scrollHeight * 0.35) {
+        openVideoModal();
+        window.removeEventListener("scroll", videoTrigger, { passive: true });
+      }
+    };
+
+    document.getElementById("videoModalClose").addEventListener("click", closeVideoModal);
+    document.getElementById("videoModalCancel").addEventListener("click", closeVideoModal);
+    videoModal.addEventListener("click", event => {
+      if (event.target.matches("[data-close-video]") || event.target === videoModal) closeVideoModal();
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && videoModal.classList.contains("is-open")) closeVideoModal();
+    });
+
+    window.addEventListener("scroll", videoTrigger, { passive: true });
+  }
+
   /* ---------- countdown ---------- */
   const target = new Date("2026-10-01T09:00:00+03:00").getTime();
   const cd = {

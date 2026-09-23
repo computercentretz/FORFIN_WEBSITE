@@ -258,7 +258,22 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .consent-banner__inner{max-width:980px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:20px 22px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(6,20,54,.97);box-shadow:0 20px 60px rgba(0,0,0,.3);color:#fff;backdrop-filter:blur(14px)}
 .consent-banner__copy{max-width:650px}.consent-banner__copy strong{font-family:"Montserrat";font-size:16px}.consent-banner__copy p{margin-top:5px;font-size:13px;line-height:1.55;color:rgba(231,236,245,.78)}.consent-banner__copy a{color:var(--cyan);text-decoration:underline;text-underline-offset:3px}
 .consent-banner__actions{display:flex;gap:10px;flex-shrink:0}.consent-btn{min-height:42px;padding:10px 17px;border-radius:999px;font-family:"Montserrat";font-size:12px;font-weight:700;cursor:pointer;transition:.2s var(--ease)}
-.consent-btn--primary{border:1px solid var(--cyan);background:var(--cyan);color:var(--navy)}.consent-btn--secondary{border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff}.consent-btn:hover{transform:translateY(-1px)}
+
+/* ---------- video modal ---------- */
+.video-modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:24px;}
+.video-modal.is-open{display:flex;}
+.video-modal__backdrop{position:absolute;inset:0;background:rgba(5,10,18,.7);backdrop-filter:blur(5px);}
+.video-modal__dialog{position:relative;z-index:1;width:min(620px,90vw);background:transparent;border:0;border-radius:0;box-shadow:none;padding:0;}
+.video-modal__header{padding:0 0 10px;}
+.video-modal__header h3{font-family:"Montserrat",sans-serif;color:#fff;font-size:clamp(18px,2vw,24px);line-height:1.25;text-shadow:0 3px 14px rgba(0,0,0,.35);}
+.video-modal__header .eyebrow{margin-bottom:6px;font-size:10px;letter-spacing:.2em;color:#d7faff;}
+.video-modal__frame{position:relative;padding-top:56.25%;background:#000;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.12);}
+.video-modal__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.video-modal__close{position:absolute;top:10px;right:10px;width:30px;height:30px;border:0;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;cursor:pointer;font-size:24px;line-height:1;display:grid;place-items:center;transition:.2s var(--ease)}
+.video-modal__close:hover{background:rgba(255,255,255,.26)}
+.video-modal__cancel{display:block;margin:12px auto 0;padding:10px 20px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);border-radius:999px;color:#fff;font-family:"Montserrat",sans-serif;font-size:13px;font-weight:700;cursor:pointer;transition:.2s var(--ease)}
+.video-modal__cancel:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(7,27,77,.1)}
+@media (max-width:640px){.video-modal{padding:12px;}.video-modal__header{padding:0 0 8px;}.video-modal__close{top:8px;right:8px;}}.consent-btn--primary{border:1px solid var(--cyan);background:var(--cyan);color:var(--navy)}.consent-btn--secondary{border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff}.consent-btn:hover{transform:translateY(-1px)}
 @keyframes consentIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}@keyframes consentOut{to{opacity:0;transform:translateY(18px)}}
 
 /* ---------- reveal animation ---------- */

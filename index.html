@@ -226,8 +226,8 @@
         <div class="ag-row"><span class="ag-time">12:15–13:00</span><div class="ag-body"><h4>Partner Session</h4><span class="ag-tag">Kaspersky · Presentation</span></div></div>
         <div class="ag-row"><span class="ag-time">13:00–14:00</span><div class="ag-body"><h4>Break Time</h4><span class="ag-tag">Lunch Break</span></div></div>
         <div class="ag-row"><span class="ag-time">14:00–15:00</span><div class="ag-body"><h4>Partner Session</h4><span class="ag-tag">Nutanix · Presentation</span></div></div>
-        <div class="ag-row"><span class="ag-time">15:00–16:00</span><div class="ag-body"><h4>Partner Session</h4><span class="ag-tag">Defenix · Presentation</span></div></div>
-        <div class="ag-row"><span class="ag-time">16:00–16:15</span><div class="ag-body"><h4>Break Time</h4><span class="ag-tag">Coffee / Tea Break</span></div></div>
+        <div class="ag-row"><span class="ag-time">15:00–15:45</span><div class="ag-body"><h4>AI-Powered Security Operations</h4><span class="ag-tag">Industry Partner · Presentation</span></div></div>
+        <div class="ag-row"><span class="ag-time">15:45–16:00</span><div class="ag-body"><h4>Break Time</h4><span class="ag-tag">Coffee / Tea Break</span></div></div>
         <div class="ag-row"><span class="ag-time">16:15–17:30</span><div class="ag-body"><h4>Panel Discussion</h4><span class="ag-tag">Fortinet, SolarWinds, CRDB, Customer · Panel Discussion</span></div></div>
         <div class="ag-row"><span class="ag-time">17:30–18:00</span><div class="ag-body"><h4>Closing Session</h4><span class="ag-tag">Computer Centre · Talk</span></div></div>
         <div class="ag-row"><span class="ag-time">18:00–18:30</span><div class="ag-body"><h4>Closing Session</h4><span class="ag-tag">Computer Centre · Return Gift</span></div></div>
@@ -351,6 +351,29 @@
   <figure class="lb__stage"><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
   <button class="lb__nav lb__next" id="lbNext" aria-label="Next"><svg class="ico" style="transform:scaleX(-1)"><use href="#i-chev"/></svg></button>
   <span class="lb__count" id="lbCount"></span>
+</div>
+
+<!-- ===== VIDEO MODAL ===== -->
+<div class="video-modal" id="videoModal" aria-hidden="true">
+  <div class="video-modal__backdrop" data-close-video></div>
+  <div class="video-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+    <button class="video-modal__close" id="videoModalClose" type="button" aria-label="Close video popup">×</button>
+    <div class="video-modal__header">
+      <span class="eyebrow">Featured video</span>
+      <h3 id="videoModalTitle">FORFIN message 2026</h3>
+    </div>
+    <div class="video-modal__frame">
+      <iframe
+        src="https://www.youtube.com/embed/STukKeDnOR8?autoplay=1&rel=0"
+        title="FORFIN 2026 video"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+    <button class="video-modal__cancel" id="videoModalCancel" type="button">Cancel</button>
+  </div>
 </div>
 
 <!-- ===== FOOTER ===== -->
