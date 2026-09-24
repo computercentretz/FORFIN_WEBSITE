@@ -199,7 +199,6 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .strip__logo img[src*="fortinet"],.plogo img[src*="fortinet"]{--logo-scale:1.05}
 .strip__logo img[src*="kaspersky"],.plogo img[src*="kaspersky"]{--logo-scale:1.08}
 .strip__logo img[src*="nutanix"],.plogo img[src*="nutanix"]{--logo-scale:.66}
-.strip__logo img[src*="defenix"],.plogo img[src*="defenix"]{--logo-scale:.82}
 .strip__logo img[src*="evad"],.plogo img[src*="evad"]{--logo-scale:.82}
 .strip__logo img[src*="datapatrol"],.plogo img[src*="datapatrol"]{--logo-scale:1.55}
 .strip__logo img[src*="censys"],.plogo img[src*="censys"]{--logo-scale:1.35}
