@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-labelledby="title desc">
+  <title id="title">Prineel Padayachy portrait</title>
+  <desc id="desc">A simplified portrait matching the shared reference image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#bfd2df"/>
+      <stop offset="100%" stop-color="#b7c9d6"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6d7278"/>
+      <stop offset="100%" stop-color="#575d64"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="250" cy="250" r="225" fill="url(#bg)"/>
+
+  <g>
+    <path d="M182 385 Q248 496 318 385 L355 496 L145 496 Z" fill="url(#suit)"/>
+    <path d="M175 365 L224 317 L250 327 L277 317 L325 365 L312 496 L188 496 Z" fill="url(#suit)"/>
+    <path d="M222 286 L250 305 L278 286 L292 331 L250 355 L208 331 Z" fill="#f7f7f7" opacity="0.75"/>
+
+    <ellipse cx="250" cy="196" rx="93" ry="112" fill="#d38a58"/>
+    <path d="M152 182 C164 120, 208 84, 250 84 C292 84, 336 120, 348 182 L340 196 C316 167, 286 149, 250 149 C214 149, 184 167, 160 196 Z" fill="#1e1d1d"/>
+    <path d="M171 191 C201 170, 218 163, 250 163 C282 163, 299 170, 329 191 L325 210 C300 194, 280 188, 250 188 C220 188, 200 194, 175 210 Z" fill="#202122"/>
+
+    <circle cx="220" cy="203" r="9" fill="#1b1b1b"/>
+    <circle cx="281" cy="203" r="9" fill="#1b1b1b"/>
+    <circle cx="222" cy="201" r="3" fill="#fff"/>
+    <circle cx="283" cy="201" r="3" fill="#fff"/>
+    <path d="M233 236 Q250 248 267 236" stroke="#7d4b2d" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M237 214 L230 226" stroke="#1b1b1b" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M263 214 L270 226" stroke="#1b1b1b" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <path d="M194 136 C213 98, 233 84, 250 84 C267 84, 287 98, 306 136" fill="none" stroke="#1a1a1a" stroke-width="10" stroke-linecap="round"/>
+    <path d="M210 123 C228 107, 240 100, 250 100 C260 100, 272 107, 290 123" fill="none" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
