@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 500" role="img" aria-labelledby="title desc">
   <title id="title">Kaspersky</title>
-  <desc id="desc">Teal Kaspersky wordmark matching the provided reference.</desc>
+  <desc id="desc">Teal Kaspersky wordmark.</desc>
   <text x="10" y="360"
         font-family="'Segoe UI', 'Arial Black', 'Montserrat', sans-serif"
         font-size="430"
-        font-weight="900"
+        font-weight="650"
         letter-spacing="-34"
         fill="#0b8d8d"
         style="paint-order:stroke fill;">kaspersky</text>

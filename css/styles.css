@@ -198,7 +198,8 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .strip__logo img[src*="solarwinds"],.plogo img[src*="solarwinds"]{--logo-scale:1.3}
 .strip__logo img[src*="hpe"],.plogo img[src*="hpe"]{--logo-scale:.62}
 .strip__logo img[src*="fortinet"],.plogo img[src*="fortinet"]{--logo-scale:1.05}
-.strip__logo img[src*="kaspersky"],.plogo img[src*="kaspersky"]{--logo-scale:1.08}
+.strip__logo img[src*="kaspersky"]{--logo-scale:1.08}
+.plogo img[src*="kaspersky"]{--logo-scale:.72}
 .strip__logo img[src*="nutanix"],.plogo img[src*="nutanix"]{--logo-scale:.66}
 .strip__logo img[src*="defenix"],.plogo img[src*="defenix"]{--logo-scale:.82}
 .strip__logo img[src*="evad"],.plogo img[src*="evad"]{--logo-scale:.82}
