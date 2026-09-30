@@ -166,6 +166,7 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .ag-body{display:flex;align-items:center;justify-content:space-between;gap:14px;flex:1;flex-wrap:wrap;min-width:0}
 .ag-body h4{font-size:15px;color:var(--navy);font-weight:700;flex:1 1 220px;min-width:0}
 .ag-tag{display:inline-block;max-width:100%;font-family:"Montserrat";font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--gray);border:1px solid var(--line);padding:5px 10px;border-radius:20px;white-space:normal;line-height:1.45;overflow-wrap:anywhere;flex:1 1 260px}
+.ag-type{flex:0 1 150px;color:var(--cyan-deep);font-size:12px;font-weight:600;line-height:1.4}
 .ag-row--star{background:linear-gradient(120deg,rgba(7,27,77,.04),transparent)}
 .ag-row--star h4{color:var(--navy)}
 .agenda__foot{display:flex;align-items:center;gap:18px;padding:20px 26px;background:var(--gray);border-top:1px solid var(--line);flex-wrap:wrap}
@@ -237,6 +238,8 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .footer__inner{display:grid;grid-template-columns:1.6fr 1fr 1.2fr;gap:40px}
 .footer__brand img{height:36px;margin-bottom:16px}
 .footer__brand p{font-size:14px;max-width:340px;line-height:1.6}
+.footer__organizer{display:inline-flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:20px;color:rgba(217,222,232,.6);font-family:"Montserrat";font-size:10px;font-weight:700;text-transform:uppercase;text-decoration:none}
+.footer__brand .footer__organizer img{display:block;width:168px;height:auto;margin:0;padding:6px 10px;background:#fff;border-radius:3px}
 .footer__social{display:flex;gap:18px;margin-top:18px}
 .footer__social a{font-size:13px;font-weight:600;color:rgba(217,222,232,.8)}
 .footer__social a:hover{color:var(--cyan)}
