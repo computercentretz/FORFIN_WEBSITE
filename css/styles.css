@@ -287,23 +287,47 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .ag-hero__meta{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:20px;color:rgba(217,222,232,.82);font-size:14px;font-weight:600}
 .ag-hero__meta span{display:inline-flex;align-items:center;gap:9px}
 .ag-hero__meta .ico{width:17px;height:17px;color:var(--cyan)}
-.ag-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start;min-width:0}
-.ag-day,.ag-grid .agenda,.ag-grid .ag-row,.ag-grid .ag-body{min-width:0}
-.ag-grid .ag-time{min-width:92px;font-size:13px}
-.ag-day__head{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.ag-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:42px;align-items:start;max-width:1180px;min-width:0}
+.ag-day,.ag-grid .agenda{min-width:0}
+.ag-day__head{display:flex;align-items:center;gap:16px;margin-bottom:18px;padding:0 2px}
 .ag-day__n{font-family:"Montserrat";font-weight:800;font-size:34px;color:var(--cyan-deep);line-height:1}
 .ag-day__head h2{font-family:"Montserrat";font-size:20px;color:var(--navy);font-weight:800}
 .ag-day__head p{font-size:13px;color:var(--muted)}
-@media (max-width:980px){.ag-grid{grid-template-columns:1fr}}
+.ag-table-wrap{max-width:none;margin:0;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.ag-table{width:100%;border-collapse:collapse;table-layout:fixed;background:#fff}
+.ag-col-activity{width:38%}
+.ag-col-lead{width:30%}
+.ag-col-type{width:19%}
+.ag-col-time{width:13%}
+.ag-table th{padding:12px 14px;background:#1d3e65;color:#fff;font-family:"Montserrat";font-size:12px;font-weight:700;text-align:left;vertical-align:middle}
+.ag-table th:last-child{text-align:right}
+.ag-table td{padding:13px 14px;border:1px solid #d7e1ec;color:#263954;font-size:13px;line-height:1.45;vertical-align:middle;overflow-wrap:anywhere}
+.ag-table tbody tr:nth-child(even){background:#f8fafc}
+.ag-table tbody tr:hover{background:#eff8fb}
+.ag-table .ag-cell-activity{color:var(--navy);font-weight:700}
+.ag-table .ag-cell-lead{color:#52627a}
+.ag-table .ag-cell-type{color:#52627a}
+.ag-table .ag-cell-time{color:var(--cyan-deep);font-family:"Montserrat";font-weight:800;font-size:12px;text-align:right;white-space:nowrap}
+.ag-table .ag-cell-type[aria-label]{color:#8491a2;text-align:center}
+.ag-table .ag-row--star{background:#f2f7fb}
+@media (max-width:980px){.ag-grid{grid-template-columns:minmax(0,1fr);gap:34px}}
 @media (max-width:600px){
   .ag-grid{padding-left:14px;padding-right:14px}
   .ag-day__head{align-items:flex-start}
-  .agenda__panel{padding:6px 14px}
-  .ag-row{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;align-items:start;padding:15px 0}
-  .ag-grid .ag-time{min-width:0;font-size:11px;padding-top:2px;white-space:nowrap}
-  .ag-body{display:block}
-  .ag-body h4{font-size:14px;line-height:1.45;overflow-wrap:anywhere}
-  .ag-tag{display:inline-block;max-width:100%;margin-top:10px;white-space:normal;line-height:1.35}
+  .ag-table-wrap{overflow:visible;border-radius:10px}
+  .ag-table,.ag-table tbody{display:block;width:100%}
+  .ag-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .ag-table tbody{padding:8px 12px}
+  .ag-table tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 12px;padding:14px 2px;border-bottom:1px solid var(--line)}
+  .ag-table tr:last-child{border-bottom:0}
+  .ag-table td{display:block;padding:0;border:0;background:none;text-align:left;overflow-wrap:anywhere}
+  .ag-table .ag-cell-activity{grid-column:1;grid-row:1;font-size:14px;line-height:1.4}
+  .ag-table .ag-cell-time{grid-column:2;grid-row:1;align-self:start;text-align:right;font-size:11px}
+  .ag-table .ag-cell-lead,.ag-table .ag-cell-type{grid-column:1/-1;font-size:12px;line-height:1.4}
+  .ag-table .ag-cell-lead::before{content:"Lead / Participants: ";font-weight:700;color:var(--muted)}
+  .ag-table .ag-cell-type::before{content:"Activity Type: ";font-weight:700;color:var(--muted)}
+  .ag-table .ag-cell-type[aria-label]::before{content:""}
+  .ag-table .ag-cell-type[aria-label]{text-align:left}
 }
 
 .ag-day.reveal{opacity:1;transform:none}
