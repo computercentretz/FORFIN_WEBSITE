@@ -1,1 +1,26 @@
-[]
+[
+	{
+		"title": "Beyond Prevention: See the Attack. Stop the Attack. Learn from the Attack",
+		"session": "Beyond Prevention: See the Attack. Stop the Attack. Learn from the Attack",
+		"day": "Day 1 - Thursday, 1 October 2026",
+		"presenter": "Moses Munguti - Kaspersky",
+		"file": "assets/resources/261001- FORFIN CCTZ- Moses Munguti_Kaspersky v5 - preso.pdf",
+		"filename": "261001- FORFIN CCTZ- Moses Munguti_Kaspersky v5 - preso.pdf"
+	},
+	{
+		"title": "Fortifying Your Data Security Posture",
+		"session": "Thales Data Security",
+		"day": "Day 1 - Thursday, 1 October 2026",
+		"presenter": "Thales",
+		"file": "assets/resources/Tanzania - Thales Data Security.pdf",
+		"filename": "Tanzania - Thales Data Security.pdf"
+	},
+	{
+		"title": "AI Security Fabric: Securing the Agentic Era",
+		"session": "AI Security Innovations",
+		"day": "Day 1 - Thursday, 1 October 2026",
+		"presenter": "Lynel Dsouza - Thales",
+		"file": "assets/resources/Thales AI Security Fabric - Tanzania - FORFIN 2026.pdf",
+		"filename": "Thales AI Security Fabric - Tanzania - FORFIN 2026.pdf"
+	}
+]
