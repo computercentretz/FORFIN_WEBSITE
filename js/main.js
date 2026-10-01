@@ -49,6 +49,146 @@
     })
   );
 
+  /* ---------- published session resources ---------- */
+  const resourceList = $("#resourceList");
+  if (resourceList) {
+    const resourceSearch = $("#resourceSearch");
+    const resourceCount = $("#resourceCount");
+    const resourceEmpty = $("#resourceEmpty");
+    const resourceStatus = $("#resourceStatus");
+    let publishedResources = [];
+
+    const renderResources = () => {
+      const query = resourceSearch.value.trim().toLowerCase();
+      const matchingResources = publishedResources.filter(resource =>
+        `${resource.title} ${resource.session} ${resource.presenter} ${resource.day}`.toLowerCase().includes(query)
+      );
+      resourceCount.textContent = `(${matchingResources.length})`;
+      resourceList.replaceChildren();
+      resourceEmpty.hidden = matchingResources.length > 0;
+      resourceEmpty.textContent = publishedResources.length && !matchingResources.length
+        ? "No presentations match your search."
+        : "No session presentations have been published yet.";
+
+      matchingResources.forEach(resource => {
+        const item = document.createElement("li");
+        item.className = "resource-item";
+        const icon = document.createElement("span");
+        icon.className = "resource-item__icon";
+        icon.setAttribute("aria-hidden", "true");
+        icon.innerHTML = '<svg class="ico"><use href="#i-file"></use></svg>';
+        const copy = document.createElement("div");
+        copy.className = "resource-item__copy";
+        const session = document.createElement("span");
+        session.className = "resource-item__session";
+        session.textContent = resource.session;
+        const title = document.createElement("h3");
+        title.textContent = resource.title;
+        const details = document.createElement("p");
+        details.textContent = [resource.day, resource.presenter].filter(Boolean).join(" · ");
+        copy.append(session, title, details);
+        const download = document.createElement("a");
+        download.className = "resource-download";
+        download.href = resource.file;
+        download.download = resource.filename;
+        download.setAttribute("aria-label", `Download ${resource.title} PDF`);
+        download.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-download"></use></svg><span>Download PDF</span>';
+        item.append(icon, copy, download);
+        resourceList.appendChild(item);
+      });
+    };
+
+    resourceSearch.addEventListener("input", renderResources);
+    fetch("assets/resources/manifest.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Resource list unavailable");
+        return response.json();
+      })
+      .then(resources => {
+        if (!Array.isArray(resources)) throw new Error("Invalid resource list");
+        publishedResources = resources.filter(resource =>
+          resource && typeof resource.title === "string" && typeof resource.session === "string" &&
+          typeof resource.file === "string" && /^assets\/resources\/[\w(). -]+\.pdf$/i.test(resource.file)
+        ).map(resource => ({
+          title: resource.title,
+          session: resource.session,
+          day: typeof resource.day === "string" ? resource.day : "",
+          presenter: typeof resource.presenter === "string" ? resource.presenter : "",
+          file: resource.file,
+          filename: typeof resource.filename === "string" ? resource.filename : resource.file.split("/").pop()
+        }));
+        renderResources();
+      })
+      .catch(() => {
+        resourceEmpty.hidden = true;
+        resourceStatus.textContent = "Presentations are temporarily unavailable. Please try again later.";
+      });
+  }
+
+  /* ---------- GitHub-backed resource publishing helper ---------- */
+  const resourceAdminForm = $("#resourceAdminForm");
+  if (resourceAdminForm) {
+    const adminStatus = $("#adminStatus");
+    const manifestOutput = $("#manifestOutput");
+    const copyManifest = $("#copyManifest");
+    let currentManifest = [];
+
+    fetch("assets/resources/manifest.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Could not load the published resource list.");
+        return response.json();
+      })
+      .then(resources => {
+        if (!Array.isArray(resources)) throw new Error("The published resource list is invalid.");
+        currentManifest = resources;
+        adminStatus.textContent = `${resources.length} published resource${resources.length === 1 ? "" : "s"} loaded.`;
+      })
+      .catch(error => {
+        adminStatus.textContent = `${error.message} Open this console through the website or a local web server.`;
+        adminStatus.classList.add("is-error");
+      });
+
+    resourceAdminForm.addEventListener("submit", event => {
+      event.preventDefault();
+      const filename = $("#adminFilename").value.trim();
+      if (!/^[A-Za-z0-9_(). -]+\.pdf$/i.test(filename)) {
+        adminStatus.textContent = "Enter a PDF filename without folders or special characters.";
+        adminStatus.classList.add("is-error");
+        return;
+      }
+      const file = `assets/resources/${filename}`;
+      if (currentManifest.some(resource => resource.file === file)) {
+        adminStatus.textContent = "That PDF is already listed in the public library.";
+        adminStatus.classList.add("is-error");
+        return;
+      }
+      const entry = {
+        title: $("#adminTitle").value.trim(),
+        session: $("#adminSession").value.trim(),
+        day: $("#adminDay").value,
+        presenter: $("#adminPresenter").value.trim(),
+        file,
+        filename
+      };
+      manifestOutput.value = JSON.stringify([...currentManifest, entry], null, 2);
+      copyManifest.disabled = false;
+      adminStatus.textContent = "Manifest prepared. Copy it into the GitHub editor and commit the change.";
+      adminStatus.classList.remove("is-error");
+    });
+
+    copyManifest.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(manifestOutput.value);
+        adminStatus.textContent = "Manifest copied. Paste it into the GitHub editor.";
+        adminStatus.classList.remove("is-error");
+      } catch {
+        manifestOutput.focus();
+        manifestOutput.select();
+        adminStatus.textContent = "Select and copy the manifest text, then paste it into the GitHub editor.";
+      }
+    });
+  }
+
   /* ---------- FAQ chat + WhatsApp handoff ---------- */
   const chat = document.createElement("aside");
   chat.className = "faq-chat";

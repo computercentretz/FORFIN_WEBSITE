@@ -17,6 +17,8 @@ forfin-2026-website/
 ├── index.html          # main one-page site (incl. "Moments from 2025" teaser)
 ├── agenda.html         # full two-day agenda
 ├── gallery.html        # photo gallery (bento mosaic + filter + lightbox)
+├── resources.html      # public download library for approved session PDFs
+├── admin.html          # unlisted GitHub-authenticated resource publishing console
 ├── css/
 │   └── styles.css      # all styling (brand tokens at the top)
 ├── js/
@@ -25,6 +27,7 @@ forfin-2026-website/
 │   ├── forfin-logo.png         # navy logo (light backgrounds)
 │   ├── forfin-logo-white.png   # white logo (dark nav / footer)
 │   ├── gallery/                # last-year event photos (photo-01.jpg … photo-12.jpg)
+│   ├── resources/              # approved PDFs + public download manifest
 │   └── sponsors/               # partner logos (fortinet, thales, idira, hpe, defenix, evad)
 └── README.md
 ```
@@ -52,6 +55,8 @@ forfin-2026-website/
   Connect it to your provider (e.g. Microsoft Forms, Mailchimp, a backend endpoint),
   or replace it with a link to your registration page.
 - **Contact:** email/phone/socials live in the footer and the CTA section.
+- **Resources:** The public `resources.html` page is read-only. Only administrators with authorized repository write access can publish materials: add approved PDFs under `assets/resources/` and add their metadata to `assets/resources/manifest.json`. Changes to `main` deploy through GitHub Pages; published PDFs are public downloads. Do not publish confidential or unapproved presentations. This static site has no website login or web upload endpoint; use an authenticated backend if in-page admin uploads are required.
+- **Admin console:** Open `admin.html` directly. Use an account with write access to `computercentretz/FORFIN_WEBSITE` to upload the PDF and commit the generated manifest through GitHub. The page is not linked in public navigation; GitHub repository permissions protect publishing actions.
 
 ## Notes
 
