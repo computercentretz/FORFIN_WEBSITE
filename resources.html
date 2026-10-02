@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=partner-groups-20261002">
+<link rel="stylesheet" href="css/styles.css?v=pdf-preview-20261002">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -54,6 +54,19 @@
   </div>
 </main>
 
+<dialog class="resource-preview" id="resourcePreview" aria-labelledby="resourcePreviewTitle">
+  <div class="resource-preview__header">
+    <h2 id="resourcePreviewTitle">Presentation preview</h2>
+    <div class="resource-preview__actions">
+      <a class="resource-download" id="resourcePreviewDownload" href="#" download>Download PDF</a>
+      <form method="dialog"><button class="resource-preview__close" type="submit" aria-label="Close preview">Close</button></form>
+    </div>
+  </div>
+  <iframe class="resource-preview__frame" id="resourcePreviewFrame" title="PDF document preview" src="about:blank">
+  </iframe>
+  <p class="resource-preview__fallback">If the preview does not appear, <a id="resourcePreviewFallback" href="#" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+</dialog>
+
 <footer class="footer">
   <div class="container footer__inner">
     <div class="footer__brand"><img src="assets/forfin-logo-white.png" alt="FORFIN 2026"><p>Fortifying Finance · AI-Driven Cyber Resilience for the Digital Future. An event by Computer Centre Tanzania.</p><a class="footer__organizer" href="https://cctz.com/" target="_blank" rel="noopener"><span>Prepared by</span><img src="https://cctz.com/wp-content/uploads/2025/01/CC-Logo-Website.png" alt="Computer Centre Tanzania"></a></div>
@@ -62,6 +75,6 @@
   </div>
   <div class="footer__bar container"><span>© 2026 FORFIN · Computer Centre Tanzania. · <a href="privacy.html">Privacy Policy</a></span><span>#FORFIN2026</span></div>
 </footer>
-<script src="js/main.js?v=partner-groups-20261002"></script>
+<script src="js/main.js?v=pdf-preview-20261002"></script>
 </body>
 </html>

@@ -382,11 +382,24 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .resource-item__session{display:block;margin-bottom:3px;color:var(--cyan-deep);font-family:"Montserrat";font-size:11px;font-weight:700;text-transform:uppercase}
 .resource-item__copy h4{overflow-wrap:anywhere;color:var(--navy);font-family:"Montserrat";font-size:15px;font-weight:700;line-height:1.35}
 .resource-item__copy p{margin-top:5px;color:var(--muted);font-size:12px;overflow-wrap:anywhere}
+.resource-item__actions{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.resource-preview__trigger,.resource-preview__close{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border:1px solid var(--line);border-radius:5px;background:#fff;color:var(--navy);font-family:"Montserrat";font-size:12px;font-weight:700;cursor:pointer;transition:.2s}
+.resource-preview__trigger:hover,.resource-preview__close:hover{border-color:var(--cyan-deep);background:#effafb;color:var(--cyan-deep)}
 .resource-download{display:inline-flex;align-items:center;justify-content:center;gap:8px;flex:0 0 auto;padding:10px 14px;border:1px solid var(--line);border-radius:5px;color:var(--navy);font-family:"Montserrat";font-size:12px;font-weight:700;transition:.2s}
 .resource-download:hover{border-color:var(--cyan-deep);background:#effafb;color:var(--cyan-deep)}
 .resource-download .ico{width:17px;height:17px}
+.resource-preview{width:min(1100px,calc(100% - 32px));max-width:none;height:min(900px,90dvh);max-height:none;padding:0;border:0;border-radius:10px;box-shadow:0 24px 80px rgba(5,18,50,.35);background:#fff}
+.resource-preview[open]{display:flex;flex-direction:column}
+.resource-preview::backdrop{background:rgba(5,18,50,.78);backdrop-filter:blur(3px)}
+.resource-preview__header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border-bottom:1px solid var(--line)}
+.resource-preview__header h2{min-width:0;overflow-wrap:anywhere;color:var(--navy);font-family:"Montserrat";font-size:16px;font-weight:800}
+.resource-preview__actions{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.resource-preview__actions form{margin:0}
+.resource-preview__frame{width:100%;min-height:0;flex:1;border:0;background:#e9edf3}
+.resource-preview__fallback{padding:7px 14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+.resource-preview__fallback a{color:var(--cyan-deep);text-decoration:underline}
 .resource-empty{padding:30px 12px;border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
-@media(max-width:760px){.resource-library__heading{align-items:stretch;flex-direction:column;gap:12px}.resource-search{width:100%}.resource-item{align-items:flex-start;gap:10px}.resource-item__icon{flex-basis:36px;height:42px}.resource-download{padding:9px 10px}.resource-download span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}}
+@media(max-width:760px){.resource-library__heading{align-items:stretch;flex-direction:column;gap:12px}.resource-search{width:100%}.resource-item{align-items:flex-start;gap:10px}.resource-item__icon{flex-basis:36px;height:42px}.resource-item__actions{gap:6px}.resource-preview__trigger,.resource-download,.resource-preview__close{padding:9px 10px}.resource-item .resource-download span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.resource-preview{width:calc(100% - 16px);height:94dvh;border-radius:7px}.resource-preview__header{align-items:flex-start;gap:8px;padding:12px}.resource-preview__actions{gap:6px}.resource-preview__header h2{font-size:14px}}
 
 /* ---------- resource admin console ---------- */
 .admin-hero p{max-width:660px}

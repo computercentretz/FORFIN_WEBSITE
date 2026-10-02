@@ -102,13 +102,29 @@
           const details = document.createElement("p");
           details.textContent = [resource.day, resource.presenter].filter(Boolean).join(" · ");
           copy.append(session, title, details);
+          const preview = document.createElement("button");
+          preview.className = "resource-preview__trigger";
+          preview.type = "button";
+          preview.textContent = "Preview";
+          preview.setAttribute("aria-label", `Preview ${resource.title} PDF`);
+          preview.addEventListener("click", () => {
+            previewTitle.textContent = resource.title;
+            previewFrame.src = resource.file;
+            previewDownload.href = resource.file;
+            previewDownload.download = resource.filename;
+            previewFallback.href = resource.file;
+            previewDialog.showModal();
+          });
           const download = document.createElement("a");
           download.className = "resource-download";
           download.href = resource.file;
           download.download = resource.filename;
           download.setAttribute("aria-label", `Download ${resource.title} PDF`);
           download.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-download"></use></svg><span>Download PDF</span>';
-          item.append(icon, copy, download);
+          const actions = document.createElement("div");
+          actions.className = "resource-item__actions";
+          actions.append(preview, download);
+          item.append(icon, copy, actions);
           list.appendChild(item);
         });
 
@@ -116,6 +132,15 @@
         resourceList.appendChild(group);
       });
     };
+
+    const previewDialog = $("#resourcePreview");
+    const previewTitle = $("#resourcePreviewTitle");
+    const previewFrame = $("#resourcePreviewFrame");
+    const previewDownload = $("#resourcePreviewDownload");
+    const previewFallback = $("#resourcePreviewFallback");
+    previewDialog.addEventListener("close", () => {
+      previewFrame.src = "about:blank";
+    });
 
     resourceSearch.addEventListener("input", renderResources);
     fetch("assets/resources/manifest.json", { cache: "no-cache" })
