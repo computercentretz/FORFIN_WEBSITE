@@ -2,6 +2,7 @@
 	{
 		"title": "Beyond Prevention: See the Attack. Stop the Attack. Learn from the Attack",
 		"session": "Beyond Prevention: See the Attack. Stop the Attack. Learn from the Attack",
+		"partner": "Kaspersky",
 		"day": "Day 1 - Thursday, 1 October 2026",
 		"presenter": "Moses Munguti - Kaspersky",
 		"file": "assets/resources/261001- FORFIN CCTZ- Moses Munguti_Kaspersky v5 - preso.pdf",
@@ -10,6 +11,7 @@
 	{
 		"title": "Fortifying Your Data Security Posture",
 		"session": "Thales Data Security",
+		"partner": "Thales",
 		"day": "Day 1 - Thursday, 1 October 2026",
 		"presenter": "Thales",
 		"file": "assets/resources/Tanzania - Thales Data Security.pdf",
@@ -18,6 +20,7 @@
 	{
 		"title": "AI Security Fabric: Securing the Agentic Era",
 		"session": "AI Security Innovations",
+		"partner": "Thales",
 		"day": "Day 1 - Thursday, 1 October 2026",
 		"presenter": "Lynel Dsouza - Thales",
 		"file": "assets/resources/Thales AI Security Fabric - Tanzania - FORFIN 2026.pdf",
@@ -26,6 +29,7 @@
 	{
 		"title": "Observability - You can't secure what you can't see",
 		"session": "Observability",
+		"partner": "ATS-SolarWinds",
 		"day": "Day 2 - Friday, 2 October 2026",
 		"presenter": "ATS-SolarWinds",
 		"file": "assets/resources/SW Observability Presentation - ATS (FORFIN 2026).pdf",
@@ -34,6 +38,7 @@
 	{
 		"title": "EfficientIP FORFIN Tanzania",
 		"session": "EfficientIP",
+		"partner": "EVAD",
 		"presenter": "EfficientIP",
 		"file": "assets/resources/2026 - EfficientIP- FORFIN - TZ - v1.pdf",
 		"filename": "2026 - EfficientIP- FORFIN - TZ - v1.pdf"
@@ -41,6 +46,7 @@
 	{
 		"title": "CCTz FORFIN October 01",
 		"session": "CCTz FORFIN",
+		"partner": "Computer Centre Tanzania (CCTZ)",
 		"presenter": "Computer Centre Tanzania",
 		"file": "assets/resources/CCTz FORFIN October 01.pdf",
 		"filename": "CCTz FORFIN October 01.pdf"
@@ -48,6 +54,7 @@
 	{
 		"title": "DataPatrol Deck - Omar Samhouri",
 		"session": "DataPatrol",
+		"partner": "EVAD",
 		"presenter": "Omar Samhouri",
 		"file": "assets/resources/DataPatrol_Deck_-_Omar_Samhouri.pdf",
 		"filename": "DataPatrol_Deck_-_Omar_Samhouri.pdf"
@@ -55,6 +62,7 @@
 	{
 		"title": "Nutanix for Financial Services",
 		"session": "Nutanix for Financial Services",
+		"partner": "Nutanix",
 		"presenter": "Nutanix",
 		"file": "assets/resources/ForFin2026 -  Nutanix for Financial Services.pdf",
 		"filename": "ForFin2026 -  Nutanix for Financial Services.pdf"
@@ -62,6 +70,7 @@
 	{
 		"title": "Fortinet How To Sell Deck",
 		"session": "Fortinet",
+		"partner": "Fortinet",
 		"presenter": "Fortinet",
 		"file": "assets/resources/Fortinet How To Sell Deck v3 2026 FORFIN.pdf",
 		"filename": "Fortinet How To Sell Deck v3 2026 FORFIN.pdf"
@@ -69,6 +78,7 @@
 	{
 		"title": "Tanzania FORFIN 2026 - EVAD - Censys",
 		"session": "Censys",
+		"partner": "EVAD",
 		"presenter": "EVAD - Censys",
 		"file": "assets/resources/Tanzania FORFIN 2026 - EVAD - Censys.pdf",
 		"filename": "Tanzania FORFIN 2026 - EVAD - Censys.pdf"

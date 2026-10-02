@@ -61,7 +61,7 @@
     const renderResources = () => {
       const query = resourceSearch.value.trim().toLowerCase();
       const matchingResources = publishedResources.filter(resource =>
-        `${resource.title} ${resource.session} ${resource.presenter} ${resource.day}`.toLowerCase().includes(query)
+        `${resource.title} ${resource.session} ${resource.presenter} ${resource.partner} ${resource.day}`.toLowerCase().includes(query)
       );
       resourceCount.textContent = `(${matchingResources.length})`;
       resourceList.replaceChildren();
@@ -70,31 +70,50 @@
         ? "No presentations match your search."
         : "No session presentations have been published yet.";
 
+      const groups = new Map();
       matchingResources.forEach(resource => {
-        const item = document.createElement("li");
-        item.className = "resource-item";
-        const icon = document.createElement("span");
-        icon.className = "resource-item__icon";
-        icon.setAttribute("aria-hidden", "true");
-        icon.innerHTML = '<svg class="ico"><use href="#i-file"></use></svg>';
-        const copy = document.createElement("div");
-        copy.className = "resource-item__copy";
-        const session = document.createElement("span");
-        session.className = "resource-item__session";
-        session.textContent = resource.session;
-        const title = document.createElement("h3");
-        title.textContent = resource.title;
-        const details = document.createElement("p");
-        details.textContent = [resource.day, resource.presenter].filter(Boolean).join(" · ");
-        copy.append(session, title, details);
-        const download = document.createElement("a");
-        download.className = "resource-download";
-        download.href = resource.file;
-        download.download = resource.filename;
-        download.setAttribute("aria-label", `Download ${resource.title} PDF`);
-        download.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-download"></use></svg><span>Download PDF</span>';
-        item.append(icon, copy, download);
-        resourceList.appendChild(item);
+        if (!groups.has(resource.partner)) groups.set(resource.partner, []);
+        groups.get(resource.partner).push(resource);
+      });
+
+      groups.forEach((resources, partner) => {
+        const group = document.createElement("section");
+        group.className = "resource-group";
+        const heading = document.createElement("h3");
+        heading.className = "resource-group__title";
+        heading.textContent = partner;
+        const list = document.createElement("ul");
+        list.className = "resource-list";
+
+        resources.forEach(resource => {
+          const item = document.createElement("li");
+          item.className = "resource-item";
+          const icon = document.createElement("span");
+          icon.className = "resource-item__icon";
+          icon.setAttribute("aria-hidden", "true");
+          icon.innerHTML = '<svg class="ico"><use href="#i-file"></use></svg>';
+          const copy = document.createElement("div");
+          copy.className = "resource-item__copy";
+          const session = document.createElement("span");
+          session.className = "resource-item__session";
+          session.textContent = resource.session;
+          const title = document.createElement("h4");
+          title.textContent = resource.title;
+          const details = document.createElement("p");
+          details.textContent = [resource.day, resource.presenter].filter(Boolean).join(" · ");
+          copy.append(session, title, details);
+          const download = document.createElement("a");
+          download.className = "resource-download";
+          download.href = resource.file;
+          download.download = resource.filename;
+          download.setAttribute("aria-label", `Download ${resource.title} PDF`);
+          download.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-download"></use></svg><span>Download PDF</span>';
+          item.append(icon, copy, download);
+          list.appendChild(item);
+        });
+
+        group.append(heading, list);
+        resourceList.appendChild(group);
       });
     };
 
@@ -112,6 +131,9 @@
         ).map(resource => ({
           title: resource.title,
           session: resource.session,
+          partner: typeof resource.partner === "string" && resource.partner.trim()
+            ? resource.partner
+            : typeof resource.presenter === "string" && resource.presenter.trim() ? resource.presenter : "Other",
           day: typeof resource.day === "string" ? resource.day : "",
           presenter: typeof resource.presenter === "string" ? resource.presenter : "",
           file: resource.file,
@@ -167,6 +189,7 @@
         session: $("#adminSession").value.trim(),
         day: $("#adminDay").value,
         presenter: $("#adminPresenter").value.trim(),
+        partner: $("#adminPartner").value.trim(),
         file,
         filename
       };
