@@ -76,6 +76,16 @@
         groups.get(resource.partner).push(resource);
       });
 
+      const partnerLogos = {
+        "ATS-SolarWinds": "solarwinds.png",
+        EVAD: "evad.png",
+        Fortinet: "fortinet.png",
+        IDIRA: "idira.png",
+        Kaspersky: "kaspersky.png",
+        Nutanix: "nutanix.png",
+        Thales: "thales.png"
+      };
+
       groups.forEach((resources, partner) => {
         const group = document.createElement("section");
         group.className = "resource-group";
@@ -88,10 +98,15 @@
         resources.forEach(resource => {
           const item = document.createElement("li");
           item.className = "resource-item";
-          const icon = document.createElement("span");
-          icon.className = "resource-item__icon";
-          icon.setAttribute("aria-hidden", "true");
-          icon.innerHTML = '<svg class="ico"><use href="#i-file"></use></svg>';
+          const thumbnail = document.createElement("div");
+          thumbnail.className = "resource-item__thumbnail";
+          const logo = document.createElement("img");
+          logo.className = "resource-item__logo";
+          logo.src = `assets/sponsors/${partnerLogos[partner]}`;
+          logo.alt = `${partner} logo`;
+          logo.loading = "lazy";
+          logo.decoding = "async";
+          thumbnail.appendChild(logo);
           const copy = document.createElement("div");
           copy.className = "resource-item__copy";
           const session = document.createElement("span");
@@ -124,7 +139,7 @@
           const actions = document.createElement("div");
           actions.className = "resource-item__actions";
           actions.append(preview, download);
-          item.append(icon, copy, actions);
+          item.append(thumbnail, copy, actions);
           list.appendChild(item);
         });
 
