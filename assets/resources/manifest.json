@@ -22,5 +22,13 @@
 		"presenter": "Lynel Dsouza - Thales",
 		"file": "assets/resources/Thales AI Security Fabric - Tanzania - FORFIN 2026.pdf",
 		"filename": "Thales AI Security Fabric - Tanzania - FORFIN 2026.pdf"
+	},
+	{
+		"title": "Observability - You can't secure what you can't see",
+		"session": "Observability",
+		"day": "Day 2 - Friday, 2 October 2026",
+		"presenter": "ATS-SolarWinds",
+		"file": "assets/resources/SW Observability Presentation - ATS (FORFIN 2026).pdf",
+		"filename": "SW Observability Presentation - ATS (FORFIN 2026).pdf"
 	}
 ]
