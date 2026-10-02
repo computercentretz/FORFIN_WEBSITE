@@ -1,12 +1,12 @@
 [
 	{
-		"title": "Beyond Prevention: See the Attack. Stop the Attack. Learn from the Attack",
+		"title": "Beyond Prevention",
 		"session": "Beyond Prevention: See the Attack. Stop the Attack. Learn from the Attack",
 		"partner": "Kaspersky",
 		"day": "Day 1 - Thursday, 1 October 2026",
-		"presenter": "Moses Munguti - Kaspersky",
-		"file": "assets/resources/261001- FORFIN CCTZ- Moses Munguti_Kaspersky v5 - preso.pdf",
-		"filename": "261001- FORFIN CCTZ- Moses Munguti_Kaspersky v5 - preso.pdf"
+		"presenter": "Moses Munguti - Africa Presales Group Manager, Kaspersky",
+		"file": "assets/resources/Kaspersky - Beyond Prevention.pdf",
+		"filename": "Kaspersky - Beyond Prevention.pdf"
 	},
 	{
 		"title": "Fortifying Your Data Security Posture",
@@ -14,8 +14,8 @@
 		"partner": "Thales",
 		"day": "Day 1 - Thursday, 1 October 2026",
 		"presenter": "Thales",
-		"file": "assets/resources/Tanzania - Thales Data Security.pdf",
-		"filename": "Tanzania - Thales Data Security.pdf"
+		"file": "assets/resources/Thales - Fortifying Your Data Security Posture.pdf",
+		"filename": "Thales - Fortifying Your Data Security Posture.pdf"
 	},
 	{
 		"title": "AI Security Fabric: Securing the Agentic Era",
@@ -23,25 +23,25 @@
 		"partner": "Thales",
 		"day": "Day 1 - Thursday, 1 October 2026",
 		"presenter": "Lynel Dsouza - Thales",
-		"file": "assets/resources/Thales AI Security Fabric - Tanzania - FORFIN 2026.pdf",
-		"filename": "Thales AI Security Fabric - Tanzania - FORFIN 2026.pdf"
+		"file": "assets/resources/Thales - AI Security Fabric - Securing the Agentic Era.pdf",
+		"filename": "Thales - AI Security Fabric - Securing the Agentic Era.pdf"
 	},
 	{
-		"title": "Observability - You can't secure what you can't see",
+		"title": "Observability: You Can't Secure What You Can't See",
 		"session": "Observability",
 		"partner": "ATS-SolarWinds",
 		"day": "Day 2 - Friday, 2 October 2026",
-		"presenter": "ATS-SolarWinds",
-		"file": "assets/resources/SW Observability Presentation - ATS (FORFIN 2026).pdf",
-		"filename": "SW Observability Presentation - ATS (FORFIN 2026).pdf"
+		"presenter": "Dylan Lloyd - SolarWinds; Prineel Padayachy - ATS Network Management",
+		"file": "assets/resources/SolarWinds - Observability - You Cannot Secure What You Cannot See.pdf",
+		"filename": "SolarWinds - Observability - You Cannot Secure What You Cannot See.pdf"
 	},
 	{
-		"title": "EfficientIP FORFIN Tanzania",
+		"title": "DNS Security: The Hidden Foundation of Cyber Resilience",
 		"session": "EfficientIP",
 		"partner": "EVAD",
-		"presenter": "EfficientIP",
-		"file": "assets/resources/2026 - EfficientIP- FORFIN - TZ - v1.pdf",
-		"filename": "2026 - EfficientIP- FORFIN - TZ - v1.pdf"
+		"presenter": "Ousmane Gueye - Africa Territory Manager",
+		"file": "assets/resources/EfficientIP - DNS Security - The Hidden Foundation of Cyber Resilience.pdf",
+		"filename": "EfficientIP - DNS Security - The Hidden Foundation of Cyber Resilience.pdf"
 	},
 	{
 		"title": "Securing Every Identity in a Digital World",
@@ -52,35 +52,35 @@
 		"filename": "IDIRA - Securing Every Identity in a Digital World.pdf"
 	},
 	{
-		"title": "DataPatrol Deck - Omar Samhouri",
-		"session": "DataPatrol",
+		"title": "Protecting in View",
+		"session": "Visual Data Security for the Insider-Risk Era",
 		"partner": "EVAD",
 		"presenter": "Omar Samhouri",
-		"file": "assets/resources/DataPatrol_Deck_-_Omar_Samhouri.pdf",
-		"filename": "DataPatrol_Deck_-_Omar_Samhouri.pdf"
+		"file": "assets/resources/DataPatrol - Protecting in View.pdf",
+		"filename": "DataPatrol - Protecting in View.pdf"
 	},
 	{
-		"title": "Nutanix for Financial Services",
-		"session": "Nutanix for Financial Services",
+		"title": "Let's Talk Modern and Secure Infrastructure",
+		"session": "Modern and Secure Infrastructure",
 		"partner": "Nutanix",
-		"presenter": "Nutanix",
-		"file": "assets/resources/ForFin2026 -  Nutanix for Financial Services.pdf",
-		"filename": "ForFin2026 -  Nutanix for Financial Services.pdf"
+		"presenter": "Nawaz Bagha",
+		"file": "assets/resources/Nutanix - Lets Talk Modern and Secure Infrastructure.pdf",
+		"filename": "Nutanix - Lets Talk Modern and Secure Infrastructure.pdf"
 	},
 	{
-		"title": "Fortinet How To Sell Deck",
+		"title": "Cyber Security in the Era of AI",
 		"session": "Fortinet",
 		"partner": "Fortinet",
-		"presenter": "Fortinet",
-		"file": "assets/resources/Fortinet How To Sell Deck v3 2026 FORFIN.pdf",
-		"filename": "Fortinet How To Sell Deck v3 2026 FORFIN.pdf"
+		"presenter": "Imran Chaudhrey - Country Manager East Africa",
+		"file": "assets/resources/Fortinet - Cyber Security in the Era of AI.pdf",
+		"filename": "Fortinet - Cyber Security in the Era of AI.pdf"
 	},
 	{
-		"title": "Tanzania FORFIN 2026 - EVAD - Censys",
+		"title": "See Everything. Secure Everything.",
 		"session": "Censys",
 		"partner": "EVAD",
 		"presenter": "EVAD - Censys",
-		"file": "assets/resources/Tanzania FORFIN 2026 - EVAD - Censys.pdf",
-		"filename": "Tanzania FORFIN 2026 - EVAD - Censys.pdf"
+		"file": "assets/resources/EVAD - Censys - See Everything Secure Everything.pdf",
+		"filename": "EVAD - Censys - See Everything Secure Everything.pdf"
 	}
 ]
