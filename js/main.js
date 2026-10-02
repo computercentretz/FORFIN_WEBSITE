@@ -89,6 +89,15 @@
       groups.forEach((resources, partner) => {
         const group = document.createElement("section");
         group.className = "resource-group";
+        const thumbnail = document.createElement("div");
+        thumbnail.className = "resource-group__thumbnail";
+        const logo = document.createElement("img");
+        logo.className = "resource-group__logo";
+        logo.src = `assets/sponsors/${partnerLogos[partner]}`;
+        logo.alt = `${partner} logo`;
+        logo.loading = "lazy";
+        logo.decoding = "async";
+        thumbnail.appendChild(logo);
         const heading = document.createElement("h3");
         heading.className = "resource-group__title";
         heading.textContent = partner;
@@ -97,18 +106,9 @@
 
         resources.forEach(resource => {
           const item = document.createElement("li");
-          item.className = "resource-item";
-          const thumbnail = document.createElement("div");
-          thumbnail.className = "resource-item__thumbnail";
-          const logo = document.createElement("img");
-          logo.className = "resource-item__logo";
-          logo.src = `assets/sponsors/${partnerLogos[partner]}`;
-          logo.alt = `${partner} logo`;
-          logo.loading = "lazy";
-          logo.decoding = "async";
-          thumbnail.appendChild(logo);
+          item.className = "resource-document";
           const copy = document.createElement("div");
-          copy.className = "resource-item__copy";
+          copy.className = "resource-document__copy";
           const session = document.createElement("span");
           session.className = "resource-item__session";
           session.textContent = resource.session;
@@ -137,13 +137,13 @@
           download.setAttribute("aria-label", `Download ${resource.title} PDF`);
           download.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-download"></use></svg><span>Download PDF</span>';
           const actions = document.createElement("div");
-          actions.className = "resource-item__actions";
+          actions.className = "resource-document__actions";
           actions.append(preview, download);
-          item.append(thumbnail, copy, actions);
+          item.append(copy, actions);
           list.appendChild(item);
         });
 
-        group.append(heading, list);
+        group.append(thumbnail, heading, list);
         resourceList.appendChild(group);
       });
     };
