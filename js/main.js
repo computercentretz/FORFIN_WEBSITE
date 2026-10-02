@@ -99,7 +99,7 @@
     };
 
     resourceSearch.addEventListener("input", renderResources);
-    fetch("assets/resources/manifest.json")
+    fetch("assets/resources/manifest.json", { cache: "no-cache" })
       .then(response => {
         if (!response.ok) throw new Error("Resource list unavailable");
         return response.json();
@@ -133,7 +133,7 @@
     const copyManifest = $("#copyManifest");
     let currentManifest = [];
 
-    fetch("assets/resources/manifest.json")
+    fetch("assets/resources/manifest.json", { cache: "no-cache" })
       .then(response => {
         if (!response.ok) throw new Error("Could not load the published resource list.");
         return response.json();
