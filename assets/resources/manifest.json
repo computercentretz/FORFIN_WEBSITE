@@ -30,5 +30,47 @@
 		"presenter": "ATS-SolarWinds",
 		"file": "assets/resources/SW Observability Presentation - ATS (FORFIN 2026).pdf",
 		"filename": "SW Observability Presentation - ATS (FORFIN 2026).pdf"
+	},
+	{
+		"title": "EfficientIP FORFIN Tanzania",
+		"session": "EfficientIP",
+		"presenter": "EfficientIP",
+		"file": "assets/resources/2026 - EfficientIP- FORFIN - TZ - v1.pdf",
+		"filename": "2026 - EfficientIP- FORFIN - TZ - v1.pdf"
+	},
+	{
+		"title": "CCTz FORFIN October 01",
+		"session": "CCTz FORFIN",
+		"presenter": "Computer Centre Tanzania",
+		"file": "assets/resources/CCTz FORFIN October 01.pdf",
+		"filename": "CCTz FORFIN October 01.pdf"
+	},
+	{
+		"title": "DataPatrol Deck - Omar Samhouri",
+		"session": "DataPatrol",
+		"presenter": "Omar Samhouri",
+		"file": "assets/resources/DataPatrol_Deck_-_Omar_Samhouri.pdf",
+		"filename": "DataPatrol_Deck_-_Omar_Samhouri.pdf"
+	},
+	{
+		"title": "Nutanix for Financial Services",
+		"session": "Nutanix for Financial Services",
+		"presenter": "Nutanix",
+		"file": "assets/resources/ForFin2026 -  Nutanix for Financial Services.pdf",
+		"filename": "ForFin2026 -  Nutanix for Financial Services.pdf"
+	},
+	{
+		"title": "Fortinet How To Sell Deck",
+		"session": "Fortinet",
+		"presenter": "Fortinet",
+		"file": "assets/resources/Fortinet How To Sell Deck v3 2026 FORFIN.pdf",
+		"filename": "Fortinet How To Sell Deck v3 2026 FORFIN.pdf"
+	},
+	{
+		"title": "Tanzania FORFIN 2026 - EVAD - Censys",
+		"session": "Censys",
+		"presenter": "EVAD - Censys",
+		"file": "assets/resources/Tanzania FORFIN 2026 - EVAD - Censys.pdf",
+		"filename": "Tanzania FORFIN 2026 - EVAD - Censys.pdf"
 	}
 ]
