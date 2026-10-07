@@ -372,8 +372,8 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .resource-search input{width:100%;min-width:0;padding:12px 13px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);font:inherit;font-size:14px}
 .resource-search input:focus{outline:none;border-color:var(--cyan-deep);box-shadow:0 0 0 3px rgba(18,197,216,.12)}
 .resource-status{min-height:1.4em;color:#b42318;font-size:13px}
-.resource-groups{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:20px}
-.resource-group{display:flex;flex:1 1 calc((100% - 40px)/3);flex-direction:column;min-width:260px;max-width:calc((100% - 40px)/3);padding:16px;border:1px solid var(--line);border-radius:9px;background:#fff;box-shadow:0 4px 16px rgba(8,31,77,.045);transition:transform .2s,box-shadow .2s}
+.resource-groups{column-count:3;column-gap:20px}
+.resource-group{display:flex;flex-direction:column;width:100%;margin-bottom:20px;padding:16px;break-inside:avoid;border:1px solid var(--line);border-radius:9px;background:#fff;box-shadow:0 4px 16px rgba(8,31,77,.045);transition:transform .2s,box-shadow .2s}
 .resource-group:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(8,31,77,.09)}
 .resource-group__thumbnail{position:relative;height:88px;margin-bottom:13px;overflow:hidden;border:1px solid #edf0f4;border-radius:5px;background:#fff}
 .resource-group__logo{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);max-width:calc(100% - 24px);max-height:calc(100% - 24px);object-fit:contain}
@@ -402,10 +402,10 @@ h1,h2,h3,h4,h5,.eyebrow,.btn,.nav__links a,.stat__n,.cd__n{font-family:"Montserr
 .resource-preview__fallback{padding:7px 14px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
 .resource-preview__fallback a{color:var(--cyan-deep);text-decoration:underline}
 .resource-empty{padding:30px 12px;border-bottom:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
-@media(max-width:900px){.resource-group{flex-basis:calc((100% - 20px)/2);max-width:calc((100% - 20px)/2)}}
-@media(max-width:760px){.resource-section{padding-bottom:128px}.resource-library__heading{align-items:stretch;flex-direction:column;gap:12px}.resource-search{width:100%}.resource-groups{gap:14px}.resource-group{padding:13px}.resource-group__thumbnail{height:72px;margin-bottom:11px}.resource-group__logo{inset:9px;width:calc(100% - 18px);height:calc(100% - 18px);max-width:calc(100% - 18px);max-height:calc(100% - 18px)}.resource-document{padding:12px 0}.resource-document__actions{gap:6px}.resource-preview__trigger,.resource-download,.resource-preview__close{padding:9px 10px}.resource-preview{width:calc(100% - 16px);height:94dvh;border-radius:7px}.resource-preview__header{align-items:flex-start;gap:8px;padding:12px}.resource-preview__actions{gap:6px}.resource-preview__header h2{font-size:14px}}
+@media(max-width:900px){.resource-groups{column-count:2}}
+@media(max-width:760px){.resource-section{padding-bottom:128px}.resource-library__heading{align-items:stretch;flex-direction:column;gap:12px}.resource-search{width:100%}.resource-group{margin-bottom:14px;padding:13px}.resource-group__thumbnail{height:72px;margin-bottom:11px}.resource-group__logo{inset:9px;width:calc(100% - 18px);height:calc(100% - 18px);max-width:calc(100% - 18px);max-height:calc(100% - 18px)}.resource-document{padding:12px 0}.resource-document__actions{gap:6px}.resource-preview__trigger,.resource-download,.resource-preview__close{padding:9px 10px}.resource-preview{width:calc(100% - 16px);height:94dvh;border-radius:7px}.resource-preview__header{align-items:flex-start;gap:8px;padding:12px}.resource-preview__actions{gap:6px}.resource-preview__header h2{font-size:14px}}
 @media(max-width:760px){.resource-group__logo[src$="nutanix.png"],.resource-group__logo[src$="thales.png"]{transform:scale(.76)}}
-@media(max-width:600px){.resource-group{flex-basis:100%;max-width:420px;width:100%}}
+@media(max-width:600px){.resource-groups{column-count:1}.resource-group{max-width:420px;margin-right:auto;margin-left:auto}}
 @media(max-width:380px){.resource-document__actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.resource-document__actions .resource-preview__trigger,.resource-document__actions .resource-download{min-width:0;padding-right:5px;padding-left:5px;font-size:11px;white-space:nowrap}}
 
 /* ---------- resource admin console ---------- */

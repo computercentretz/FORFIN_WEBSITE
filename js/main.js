@@ -89,15 +89,18 @@
       groups.forEach((resources, partner) => {
         const group = document.createElement("section");
         group.className = "resource-group";
-        const thumbnail = document.createElement("div");
-        thumbnail.className = "resource-group__thumbnail";
-        const logo = document.createElement("img");
-        logo.className = "resource-group__logo";
-        logo.src = `assets/sponsors/${partnerLogos[partner]}`;
-        logo.alt = `${partner} logo`;
-        logo.loading = "lazy";
-        logo.decoding = "async";
-        thumbnail.appendChild(logo);
+        if (partnerLogos[partner]) {
+          const thumbnail = document.createElement("div");
+          thumbnail.className = "resource-group__thumbnail";
+          const logo = document.createElement("img");
+          logo.className = "resource-group__logo";
+          logo.src = `assets/sponsors/${partnerLogos[partner]}`;
+          logo.alt = `${partner} logo`;
+          logo.loading = "lazy";
+          logo.decoding = "async";
+          thumbnail.appendChild(logo);
+          group.appendChild(thumbnail);
+        }
         const heading = document.createElement("h3");
         heading.className = "resource-group__title";
         heading.textContent = partner;
@@ -143,7 +146,7 @@
           list.appendChild(item);
         });
 
-        group.append(thumbnail, heading, list);
+        group.append(heading, list);
         resourceList.appendChild(group);
       });
     };

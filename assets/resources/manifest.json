@@ -82,5 +82,13 @@
 		"presenter": "EVAD - Censys",
 		"file": "assets/resources/EVAD - Censys - See Everything Secure Everything.pdf",
 		"filename": "EVAD - Censys - See Everything Secure Everything.pdf"
+	},
+	{
+		"title": "AI Agents that never leave your building.",
+		"session": "RUSH by Amantra",
+		"partner": "Amantra",
+		"presenter": "Amantra",
+		"file": "assets/resources/Amantra - AI Agents That Never Leave Your Building.pdf",
+		"filename": "Amantra - AI Agents That Never Leave Your Building.pdf"
 	}
 ]
